@@ -89,13 +89,13 @@ header, nav, main, section, article, aside, footer {
 }
 
 .footer {
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .footer a {
-  color: #3e52a3;
+  color: #502050;
   text-decoration: none;
 }
 
@@ -186,6 +186,9 @@ header, nav, main, section, article, aside, footer {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+  }
+  .footer {
+    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
