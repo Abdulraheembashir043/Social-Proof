@@ -1,0 +1,204 @@
+// ########## Default ##########
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    background: url("../images/bg-pattern-top-mobile.svg") left top no-repeat, url("../images/bg-pattern-bottom-mobile.svg") right bottom no-repeat;
+}
+header, nav, main, section, article, aside, footer {
+    display: block;
+}
+
+// ########## Mobile View ##########
+.wrapper {
+
+    margin: 50px 10px;
+
+    .first-section {
+        header {
+            
+            h1 {
+                width: 80%;
+                margin: 0 auto;
+                color: hsl(300, 43%, 22%);
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                margin: 20px 11px 10px;
+                line-height: 1.5em;
+                color: hsl(303, 10%, 53%);
+            }
+        }
+
+        article {
+            margin: 30px 0;
+            
+            .rating {
+                margin: 10px;
+                padding: 10px;
+                background: hsl(300, 24%, 96%);
+                border-radius: 6px;
+                text-align: center;
+
+                img {
+                    margin: 0 3px;
+                }
+
+                span {
+                    display: block;
+                    color: hsl(300, 43%, 22%);
+                    font-weight: 700;
+                    margin-top: 10px;
+                }
+            }
+        }
+    } // ########## End of First Section ##########
+
+    .second-section {
+
+        .buyer {
+            background: hsl(300, 43%, 22%);
+            color: hsl(0, 0%, 100%);
+            margin: 0 10px 15px;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 30px 30px;
+            line-height: 1.5em;
+            
+
+            .caption {
+                display: flex;
+                margin-bottom: 20px;
+
+                img {
+                    border-radius: 50%;
+                }
+    
+                .write-up {
+                    align-self: center;
+                    margin-left: 15px;
+                    line-height: 1.3em;
+
+                    p {
+                        color: hsl(333, 80%, 67%);
+                    }
+                }
+            }
+
+           
+        }
+
+    } 
+
+
+} // ########## End of Wrapper ##########
+
+.footer {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+} // ########## End of Footer ##########
+
+
+
+// ########## Desktop View ##########
+@media screen and (min-width: 768px) {
+    body {
+        background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat, url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+    }
+    .wrapper {
+        margin: 60px 120px;
+
+        .first-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2em;
+            margin-bottom: 50px;
+
+            header {
+                align-self: center;
+                padding-right: 35%;
+            
+                h1 {
+                    text-align: left;
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1;
+                }
+
+                p {
+                    text-align: left;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 1.5;margin-top: 5px;
+                }
+            }
+
+            article {
+                display: grid;
+                
+
+                .rating {
+                    margin: 5px;
+                    padding: 10px 0 10px 15px;
+                    width: 410px;
+                    text-align: left;
+
+                    span {
+                        display: inline;
+                        margin-left: 20px;
+                    }
+                }
+
+                .guru {
+                    justify-self: center;
+                }
+
+                .bestTech {
+                    justify-self: end;
+                }
+                
+            }
+        } // ########## End of First Section ##########
+
+        .second-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+            height: 270px;
+
+            .buyer {
+                margin: 0;
+                height: 180px;
+            }
+
+            .colton {
+                align-self: start;
+            }
+
+            .irene {
+                align-self: center;
+            }
+
+            .anne {
+                align-self: end;
+            }
+        }
+       
+
+    } // ########## End of Wrapper ##########
+
+}

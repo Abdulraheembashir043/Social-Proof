@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  background: url("../images/bg-pattern-top-mobile.svg") left top no-repeat, url("../images/bg-pattern-bottom-mobile.svg") right bottom no-repeat;
+}
+
+header, nav, main, section, article, aside, footer {
+  display: block;
+}
+
+.wrapper {
+  margin: 50px 10px;
+}
+
+.wrapper .first-section header h1 {
+  width: 80%;
+  margin: 0 auto;
+  color: #502050;
+  text-align: center;
+}
+
+.wrapper .first-section header p {
+  text-align: center;
+  margin: 20px 11px 10px;
+  line-height: 1.5em;
+  color: #937b92;
+}
+
+.wrapper .first-section article {
+  margin: 30px 0;
+}
+
+.wrapper .first-section article .rating {
+  margin: 10px;
+  padding: 10px;
+  background: #f7f2f7;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.wrapper .first-section article .rating img {
+  margin: 0 3px;
+}
+
+.wrapper .first-section article .rating span {
+  display: block;
+  color: #502050;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.wrapper .second-section .buyer {
+  background: #502050;
+  color: white;
+  margin: 0 10px 15px;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 30px 30px;
+  line-height: 1.5em;
+}
+
+.wrapper .second-section .buyer .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.wrapper .second-section .buyer .caption img {
+  border-radius: 50%;
+}
+
+.wrapper .second-section .buyer .caption .write-up {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 15px;
+  line-height: 1.3em;
+}
+
+.wrapper .second-section .buyer .caption .write-up p {
+  color: #ee68a4;
+}
+
+.footer {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat, url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+  }
+  .wrapper {
+    margin: 60px 120px;
+  }
+  .wrapper .first-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin-bottom: 50px;
+  }
+  .wrapper .first-section header {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-right: 35%;
+  }
+  .wrapper .first-section header h1 {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+  .wrapper .first-section header p {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  .wrapper .first-section article {
+    display: -ms-grid;
+    display: grid;
+  }
+  .wrapper .first-section article .rating {
+    margin: 5px;
+    padding: 10px 0 10px 15px;
+    width: 410px;
+    text-align: left;
+  }
+  .wrapper .first-section article .rating span {
+    display: inline;
+    margin-left: 20px;
+  }
+  .wrapper .first-section article .guru {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .wrapper .first-section article .bestTech {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .wrapper .second-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    height: 270px;
+  }
+  .wrapper .second-section .buyer {
+    margin: 0;
+    height: 180px;
+  }
+  .wrapper .second-section .colton {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .wrapper .second-section .irene {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .wrapper .second-section .anne {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+/*# sourceMappingURL=style.css.map */
