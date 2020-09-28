@@ -99,16 +99,29 @@ header, nav, main, section, article, aside, footer {
 } // ########## End of Wrapper ##########
 
 .footer {
-    font-size: 13px;
+    font-size: 0.65em;
     text-align: center;
     margin-bottom: 10px;
-}
-.footer a {
-    color: hsl(300, 43%, 22%);
-    text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
+
+    a {
+        color: hsl(300, 43%, 22%);
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    #fspan {
+        padding-right: 10px;
+        border-right: 1px solid hsl(300, 43%, 22%);
+    }
+
+    #sspan {
+        padding-left: 10px;
+        border-left: 1px solid hsl(300, 43%, 22%);
+    }
+
 } // ########## End of Footer ##########
 
 
@@ -119,7 +132,7 @@ header, nav, main, section, article, aside, footer {
         background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat, url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
     }
     .wrapper {
-        margin: 60px 120px;
+        margin: 60px 150px;
 
         .first-section {
             display: grid;
@@ -178,11 +191,11 @@ header, nav, main, section, article, aside, footer {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 1em;
-            height: 270px;
+            height: 300px;
 
             .buyer {
                 margin: 0;
-                height: 180px;
+                height: 200px;
             }
 
             .colton {

@@ -89,18 +89,28 @@ header, nav, main, section, article, aside, footer {
 }
 
 .footer {
-  font-size: 13px;
+  font-size: 0.65em;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .footer a {
   color: #502050;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.footer #fspan {
+  padding-right: 10px;
+  border-right: 1px solid #502050;
+}
+
+.footer #sspan {
+  padding-left: 10px;
+  border-left: 1px solid #502050;
 }
 
 @media screen and (min-width: 768px) {
@@ -108,7 +118,7 @@ header, nav, main, section, article, aside, footer {
     background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat, url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
   }
   .wrapper {
-    margin: 60px 120px;
+    margin: 60px 150px;
   }
   .wrapper .first-section {
     display: -ms-grid;
@@ -166,11 +176,11 @@ header, nav, main, section, article, aside, footer {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
-    height: 270px;
+    height: 300px;
   }
   .wrapper .second-section .buyer {
     margin: 0;
-    height: 180px;
+    height: 200px;
   }
   .wrapper .second-section .colton {
     -ms-flex-item-align: start;
